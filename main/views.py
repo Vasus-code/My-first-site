@@ -10,7 +10,7 @@ from .forms import DbForm
 class DbCreateView(CreateView):
 	template_name = 'main/register.html'
 	form_class = DbForm
-	success_url = '/mairn/'
+	success_url = '/main/'
 
 
 def index(request):
