@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wk.com</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="icon" href="{% static 'src/wk.png' %}">
+</head>
+<body>
+	<header>
+		<div class="logoFrame">
+			<img class="wkLogo" src="{% static 'src/wk.png' %}">
+			<div class="wkTitle">
+				<h1>Вход в вконтакте</h1>
+			</div>
+			
+		</div>
+		
+	</header>
+	<div class = "RegistarFrame">
+		<form   method="post">
+			{% csrf_token %}
+			{{ form.as_p }}
+		<input class="joinBttn" type="submit" value="Войти">
+		<p><a class="forgotPas" href="vsvsd">Забыли пороль?</a></p>
+	</form>
+	</div>
+
+</body>
+</html>
+
+

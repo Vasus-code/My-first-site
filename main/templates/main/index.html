@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wk.com</title>
+</head>
+<body>
+	<h1>Пользователи:</h1><br><br>
+
+	{% for d in dbs %}
+		<p>Имя: {{d.name}}; Пароль: {{d.pas}} </p><br>
+	{% endfor %}
+</body>
+</html>
+
+
