@@ -18,3 +18,4 @@ def index(request):
 	context = {'dbs': dbs}
 	template = 'main/index.html'
 	return render(request, template, context)
+
